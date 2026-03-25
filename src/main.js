@@ -2,7 +2,6 @@ const refs = {
   openMenuBtn: document.querySelector('[data-menu-open]'),
   closeMenuBtn: document.querySelector('[data-menu-close]'),
   backdrop: document.querySelector('[data-backdrop]'),
-  menuLinks: document.querySelectorAll('.mobile-nav__link'),
   body: document.body,
 };
 
