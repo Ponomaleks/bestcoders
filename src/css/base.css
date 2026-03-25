@@ -64,12 +64,12 @@ main {
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--color-black);
+}
 
-  @media only screen and (min-width: 768px) {
-    .section-title {
-      font-size: 40px;
-      line-height: 1.2;
-    }
+@media only screen and (min-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 1.2;
   }
 }
 
@@ -89,14 +89,13 @@ main {
   right: 0;
   z-index: -1;
   background: #bee8cc;
-
-  @media only screen and (min-width: 768px) {
-    .section-title-part::after {
-      height: 20px;
-    }
-  }
 }
 
+@media only screen and (min-width: 768px) {
+  .section-title-part::after {
+    height: 20px;
+  }
+}
 /* #endregion */
 
 /* #region Buttons classes */
