@@ -29,10 +29,10 @@
   font-size: 38px;
   line-height: 1.05;
   color: #fff;
+}
 
-  & .accent {
-    color: var(--color-green-accent);
-  }
+.proposal-text .accent {
+  color: var(--color-green-accent);
 }
 
 @media (min-width: 768px) {
@@ -55,64 +55,60 @@
 
 .proposal-card__wrapper {
   position: relative;
+}
 
-  &::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    background-color: var(--color-white-transparent-05);
-    transform: rotate(11deg);
-  }
+.proposal-card__wrapper::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: var(--color-white-transparent-05);
+  transform: rotate(11deg);
+}
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    background-color: var(--color-light_green);
-    transform: rotate(-9deg);
-  }
+.proposal-card__wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: var(--color-light_green);
+  transform: rotate(-9deg);
 }
 
 @media (min-width: 768px) {
-  .proposal-card__wrapper {
-    &::before {
-      top: 6px;
-      left: 8px;
-      width: 668px;
-      border-radius: 30px;
-    }
+  .proposal-card__wrapper::before {
+    top: 6px;
+    left: 8px;
+    width: 668px;
+    border-radius: 30px;
+  }
 
-    &::after {
-      border-radius: 30px;
-      transform: rotate(-10deg);
-    }
+  .proposal-card__wrapper::after {
+    border-radius: 30px;
+    transform: rotate(-10deg);
   }
 }
 
 @media (min-width: 1280px) {
-  .proposal-card__wrapper {
-    &::before {
-      top: 47px;
-      left: 5px;
-      width: 1010px;
-      height: 401px;
-    }
+  .proposal-card__wrapper::before {
+    top: 47px;
+    left: 5px;
+    width: 1010px;
+    height: 401px;
+  }
 
-    &::after {
-      top: 10px;
-      left: -23px;
-      width: 1049px;
-      height: 462px;
-      transform: rotate(-8deg);
-    }
+  .proposal-card__wrapper::after {
+    top: 10px;
+    left: -23px;
+    width: 1049px;
+    height: 462px;
+    transform: rotate(-8deg);
   }
 }
 
@@ -132,19 +128,19 @@
     gap: 32px;
     border-radius: 30px;
     padding: 64px 32px;
+  }
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 63px;
-      right: -48px;
-      display: block;
-      width: 214px;
-      height: 263px;
-      background-image: url('../img/proposals/books.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+  .proposal-card::after {
+    content: '';
+    position: absolute;
+    bottom: 63px;
+    right: -48px;
+    display: block;
+    width: 214px;
+    height: 263px;
+    background-image: url('../img/proposals/books.png');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
@@ -158,11 +154,11 @@
   .proposal-card {
     gap: 40px;
     padding: 64px;
+  }
 
-    &::after {
-      bottom: 79px;
-      right: 0;
-    }
+  .proposal-card::after {
+    bottom: 79px;
+    right: 0;
   }
 }
 
@@ -198,28 +194,28 @@
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: -0.02em;
+}
 
-  &:not(:last-child) {
-    margin-bottom: 16px;
-  }
+.proposal-card__item:not(:last-child) {
+  margin-bottom: 16px;
+}
 
-  & .checkmark__wrapper {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    background-color: var(--color-green);
-    border-radius: 50%;
-    position: relative;
-  }
+.proposal-card__item .checkmark__wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  background-color: var(--color-green);
+  border-radius: 50%;
+  position: relative;
+}
 
-  & .checkmark {
-    height: 13px;
-    width: 13px;
-    fill: none;
-  }
+.proposal-card__item .checkmark {
+  height: 13px;
+  width: 13px;
+  fill: none;
 }
 
 @media (min-width: 768px) {
@@ -227,15 +223,15 @@
     gap: 16px;
     font-size: 20px;
     line-height: 1.2;
+  }
 
-    & .checkmark__wrapper {
-      width: 28px;
-      height: 28px;
-    }
+  .proposal-card__item .checkmark__wrapper {
+    width: 28px;
+    height: 28px;
+  }
 
-    & .checkmark {
-      width: 20px;
-      height: 20px;
-    }
+  .proposal-card__item .checkmark {
+    width: 20px;
+    height: 20px;
   }
 }
