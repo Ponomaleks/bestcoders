@@ -1,1 +1,147 @@
+.our-lessons-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
 
+@media only screen and (min-width: 768px) {
+  .our-lessons-top {
+    margin-bottom: 64px;
+  }
+}
+
+.our-lessons-text {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: var(--color-black-transparent);
+}
+
+@media only screen and (min-width: 768px) {
+  .our-lessons-text {
+    max-width: 655px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.our-lessons-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .our-lessons-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .our-lessons-items {
+    justify-content: center;
+  }
+}
+
+.our-lessons-item {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  max-width: 336px;
+  height: 400px;
+  padding: 40px 20px;
+  border: 1px solid var(--color-green);
+  border-radius: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .our-lessons-item {
+    flex-basis: calc((100% - 32px) / 2);
+    padding: 32px 16px;
+    max-width: 336px;
+    height: 404px;
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .our-lessons-item {
+    flex-basis: calc((100% - 32px * 2) / 2);
+    padding: 32px 32px;
+    max-width: 320px;
+  }
+}
+
+.our-lessons-item:nth-child(2n) {
+  background-color: var(--color-green);
+  border: none;
+}
+
+.lessons-item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--color-black);
+}
+
+.lessons-item-title-inverse {
+  color: var(--color-white);
+}
+
+.lessons-item-price {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--color-black);
+}
+
+@media only screen and (min-width: 768px) {
+  .lessons-item-price {
+    line-height: 1.38;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .lessons-item-price {
+    margin-bottom: 16px;
+  }
+}
+
+.lessons-item-price-inverse {
+  color: var(--color-white);
+}
+
+.lessons-item-text {
+  display: block;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: var(--color-black-transparent);
+}
+
+@media only screen and (min-width: 768px) {
+  .lessons-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.lessons-item-text-inverse {
+  color: var(--color-white-transparent);
+}
+
+.our-lessons-item-link {
+  margin-top: auto;
+  flex-shrink: 0;
+}

@@ -1,0 +1,76 @@
+.teachers .section-title {
+  margin-bottom: 16px;
+}
+
+.teachers-text {
+  max-width: 709px;
+  margin: 0 auto 40px;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: var(--color-black-transparent);
+}
+
+.teachers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.teachers-item {
+  text-align: center;
+}
+
+.teachers-image {
+  margin: 0 auto 16px;
+  border-radius: 50%;
+}
+
+.teachers-name {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--color-black);
+}
+
+.teachers-description {
+  max-width: 272px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--color-black-transparent);
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .teachers-text {
+    margin-bottom: 64px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .teachers-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 40px;
+    justify-content: center;
+  }
+
+  .teachers-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1280px) {
+  .teachers-list {
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+
+  .teachers-item {
+    width: calc((100% - 96px) / 4);
+  }
+}
