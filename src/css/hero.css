@@ -96,19 +96,24 @@ html {
 
 .hero-scroll {
   position: absolute;
-  bottom: 32px;
   right: 32px;
+  bottom: 32px;
 
   width: 48px;
   height: 48px;
 
-  border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #4dc274;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+<<<<<<< Updated upstream
 .hero-scroll img {
   width: 48px;
   height: 48px;
@@ -124,8 +129,27 @@ html {
 }
 
 .hero-scroll:hover .icon-hover {
+=======
+.hero-scroll-icon {
+>>>>>>> Stashed changes
   display: block;
+  width: 14px;
+  height: 14px;
+  color: inherit;
+  fill: #4dc274;
 }
+
+
+/* hover эффект */
+.hero-scroll:hover {
+  background-color: #4dc274;
+}
+
+.hero-scroll:hover .hero-scroll-icon {
+  fill: #ffffff;
+}
+
+
 
 @media screen and (max-width: 820px) {
   .hero-card {
