@@ -75,23 +75,22 @@ main {
 }
 
 section.section {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   scroll-margin-top: 100px;
 }
 
 @media (min-width: 768px) {
   section.section {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 }
 
 @media (min-width: 1280px) {
   section.section {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 
   section.section.hero {
-    margin-bottom: 96px;
+    padding-bottom: 96px;
   }
 }
-

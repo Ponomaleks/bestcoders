@@ -30,7 +30,7 @@
   bottom: 0;
   right: 0;
   z-index: -1;
-  background: #bee8cc;
+  background: var(--color-green-accent);
 }
 
 @media only screen and (min-width: 768px) {
